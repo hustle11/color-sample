@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Vibe</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<div id="content">
+		<div id="colorbox">
+			<span>Hey Baby</span>
+		</div>
+	</div>
+	<script>
+	curl = {
+		baseUrl: '/',
+		paths: {
+			my: 'js',
+			'socket.io': '/socket.io/socket.io.js'
+			jquery: '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
+		}
+	};
+	</script>
+	<script src="/js/lib/curl.js"></script>
+	<script>
+	curl(['my/app', 'domReady!']).then(function(app){
+		app.run();
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+	"name": "color_sample",
+	"version": "0.0.1",
+	"dependencies": {
+		"socket.io": "~0.9.16",
+		"underscore": "~1.5.2",
+		"express": "~3.4.7",
+		"less": "~1.5.1",
+		"less-middleware": "~0.1.14"
+	},
+	"jshintConfig": {
+		"globalstrict": false,
+		"undef": true,
+		"unused": true,
+		"laxcomma": true,
+		"globals": {
+			"console": false,
+			"require": false,
+			"__dirname": false,
+			"path": false,
+			"define": false,
+			"window": false
+		}
+	}
+}
